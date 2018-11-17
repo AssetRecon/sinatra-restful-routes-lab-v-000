@@ -8,5 +8,3 @@ class CreateRecipes < ActiveRecord::Migration
     end
   end
 end
-
-  
