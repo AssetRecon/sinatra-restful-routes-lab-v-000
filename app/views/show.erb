@@ -1,13 +1,9 @@
-<form method="POST" action="/recipes">
 
-  <label for="name">Name</label>
-  <input type="text" id="name" name="name" />
+  <h1>Name:</h1> <h2><%= @recipe.name %></h2></br>
+  <h1>ingredients:</h1> <h2><%= @recipe.ingredients %></h2></br>
+  <h1>Cook Time:</h1> <h2><%= @recipe.cook_time %></h2></br>
 
-  <label for="ingredients">Ingredients</label>
-  <input type="text" id="ingredients" name="ingredients" />
-
-  <label for="cook_time">Cook Time</label>
-  <input type="text" id="cook_time" name="cook_time" />
-
-  <input type="submit" value="submit" />
-</form>
+  <form method="POST" action="/recipes/<%=@recipe.id%>">
+    <input type="hidden" name="_method" value="DELETE" />
+    <input type="submit" value="delete" />
+  </form>
