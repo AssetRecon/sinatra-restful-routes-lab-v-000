@@ -4,5 +4,3 @@ class CreateRecipes < ActiveRecord::Migration
     add_column :recipes, :cook_time, :integer
   end
 end
-
-  
