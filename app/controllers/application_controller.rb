@@ -9,15 +9,17 @@ class ApplicationController < Sinatra::Base
    erb :index
  end
 
- get 'new_recipe' do
+ get '/new_recipe' do
    erb :new_recipe
  end
 
- post 'new_recipe' do
+ post '/new_recipe' do
    @recipe = Recipe.create(name: params[:name], ingredients: params[:ingredients])
    redirect '/recipes'
  end
 
- 
+ get '/recipies/:id'
+  erb :show
+
 
 end
