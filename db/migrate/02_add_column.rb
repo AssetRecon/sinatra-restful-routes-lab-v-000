@@ -1,4 +1,4 @@
-class CreateRecipes < ActiveRecord::Migration
+class AddCookTimeToRecipes < ActiveRecord::Migration
 
   def change
     add_column :recipes, :cook_time, :integer
