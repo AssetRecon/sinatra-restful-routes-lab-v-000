@@ -20,6 +20,8 @@ class ApplicationController < Sinatra::Base
 
  get '/recipies/:id' do
   erb :show
-end
+  end
+
+  
 
 end
