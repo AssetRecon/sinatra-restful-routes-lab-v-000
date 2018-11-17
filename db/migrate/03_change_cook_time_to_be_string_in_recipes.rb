@@ -1,6 +1,6 @@
 class ChangeCookTimeToBeStringInRecipes < ActiveRecord::Migration
 
 def change
-  add_column :recipes, :cook_time, :string
+  change_column :recipes, :cook_time, :string
 end
 end
